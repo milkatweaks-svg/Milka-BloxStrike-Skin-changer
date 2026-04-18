@@ -1,12 +1,782 @@
---[[
- .____                  ________ ___.    _____                           __                
- |    |    __ _______   \_____  \\_ |___/ ____\_ __  ______ ____ _____ _/  |_  ___________ 
- |    |   |  |  \__  \   /   |   \| __ \   __\  |  \/  ___// ___\\__  \\   __\/  _ \_  __ \
- |    |___|  |  // __ \_/    |    \ \_\ \  | |  |  /\___ \\  \___ / __ \|  | (  <_> )  | \/
- |_______ \____/(____  /\_______  /___  /__| |____//____  >\___  >____  /__|  \____/|__|   
-         \/          \/         \/    \/                \/     \/     \/                   
-          \_Welcome to LuaObfuscator.com   (Alpha 0.10.9) ~  Much Love, Ferib 
+local Rayfield = loadstring(game:HttpGet("https://raw.githubusercontent.com/twistedk1d/BloxStrike/refs/heads/main/Source/UI/source.lua"))()
 
-]]--
+--// Window creation
+local Window = Rayfield:CreateWindow({
+    Name = "MilkaPrivate",
+    Icon = 0,
+    LoadingTitle = "loading MilkaPrivate",
+    LoadingSubtitle = "Made by Milka",
+    ShowText = "Menu",
+    Theme = "Dark",
+    ToggleUIKeybind = Enum.KeyCode.RightShift,
+    DisableRayfieldPrompts = false,
+    DisableBuildWarnings = false,
+    ConfigurationSaving = {
+        Enabled = true,
+        FolderName = "MilkaPrivate",
+        FileName = "MilkaPrivate"
+    }
+})
 
-local v0=tonumber;local v1=string.byte;local v2=string.char;local v3=string.sub;local v4=string.gsub;local v5=string.rep;local v6=table.concat;local v7=table.insert;local v8=math.ldexp;local v9=getfenv or function() return _ENV;end ;local v10=setmetatable;local v11=pcall;local v12=select;local v13=unpack or table.unpack ;local v14=tonumber;local function v15(v16,v17,...) local v18=1;local v19;v16=v4(v3(v16,5),"..",function(v30) if (v1(v30,2)==81) then v19=v0(v3(v30,1,1));return "";else local v81=0;local v82;while true do if (v81==0) then v82=v2(v0(v30,16));if v19 then local v113=0;local v114;while true do if (v113==1) then return v114;end if (v113==0) then v114=v5(v82,v19);v19=nil;v113=1;end end else return v82;end break;end end end end);local function v20(v31,v32,v33) if v33 then local v83=0;local v84;while true do if (v83==(0 -0)) then v84=(v31/(((1642 -(1523 + 114)) -3)^(v32-1)))%((3 -1)^(((v33-(2 -1)) -(v32-(620 -(555 + 64)))) + (932 -(857 + 67 + 7)))) ;return v84-(v84%(569 -((523 -156) + 201))) ;end end else local v85=(929 -(214 + 713))^(v32-((1066 -(68 + 997)) + 0)) ;return (((v31%(v85 + v85))>=v85) and (1 + 0)) or (877 -(282 + (1865 -(226 + 1044)))) ;end end local function v21() local v34=v1(v16,v18,v18);v18=v18 + 1 ;return v34;end local function v22() local v35,v36=v1(v16,v18,v18 + 2 );v18=v18 + (8 -6) ;return (v36 * (373 -(32 + 85))) + v35 ;end local function v23() local v37,v38,v39,v40=v1(v16,v18,v18 + 3 + 0 );v18=v18 + 4 ;return (v40 * 16777216) + (v39 * (14533 + 51003)) + (v38 * (1213 -(892 + 65))) + v37 ;end local function v24() local v41=0 -0 ;local v42;local v43;local v44;local v45;local v46;local v47;while true do if (v41==(3 -1)) then v46=v20(v43,38 -17 ,31);v47=((v20(v43,(1469 -1087) -(87 + 263) )==(181 -(67 + 113))) and  -(1 + 0)) or 1 ;v41=7 -4 ;end if (v41==(1 + 0)) then v44=(445 -(416 + 26)) -2 ;v45=(v20(v43,953 -(802 + 150) ,53 -(105 -72) ) * ((3 -1)^(11 + 13 + 8))) + v42 ;v41=999 -(915 + 82) ;end if (v41==(8 -(8 -3))) then if (v46==(438 -(145 + 293))) then if (v45==(0 + 0)) then return v47 * (0 -(430 -(44 + 386))) ;else v46=1188 -(1069 + 118) ;v44=(1486 -(998 + 488)) -0 ;end elseif (v46==(4477 -2430)) then return ((v45==(0 + 0)) and (v47 * ((1 -0)/(0 + 0)))) or (v47 * NaN) ;end return v8(v47,v46-(1814 -(368 + 135 + 288)) ) * (v44 + (v45/((6 -4)^((58 + 12) -(10 + 8))))) ;end if (v41==0) then v42=v23();v43=v23();v41=1;end end end local function v25(v48) local v49;if  not v48 then local v86=0;while true do if (v86==0) then v48=v23();if (v48==((454 + 318) -(201 + 571))) then return "";end break;end end end v49=v3(v16,v18,(v18 + v48) -(1139 -(116 + (3730 -2708))) );v18=v18 + v48 ;local v50={};for v65=4 -3 , #v49 do v50[v65]=v2(v1(v3(v49,v65,v65)));end return v6(v50);end local v26=v23;local function v27(...) return {...},v12("#",...);end local function v28() local v51=(function() return 0;end)();local v52=(function() return;end)();local v53=(function() return;end)();local v54=(function() return;end)();local v55=(function() return;end)();local v56=(function() return;end)();local v57=(function() return;end)();local v58=(function() return;end)();while true do if (v51~=(1750 -(1013 + 736))) then else v56=(function() return {v53,v54,nil,v55};end)();v57=(function() return v23();end)();v58=(function() return {};end)();for v91= #"~",v57 do local v92=(function() return 0 + 0 ;end)();local v93=(function() return;end)();local v94=(function() return;end)();local v95=(function() return;end)();while true do if (v92~=(0 -0)) then else v93=(function() return 0 -0 ;end)();v94=(function() return nil;end)();v92=(function() return 868 -(550 + 317) ;end)();end if (v92~=(1 -0)) then else v95=(function() return nil;end)();while true do if (v93==0) then local v117=(function() return 0 -0 ;end)();while true do if (v117==(0 -0)) then v94=(function() return v21();end)();v95=(function() return nil;end)();v117=(function() return 1;end)();end if (v117==1) then v93=(function() return 1;end)();break;end end end if ((286 -(134 + 151))~=v93) then else if (v94== #",") then v95=(function() return v21()~=0 ;end)();elseif (v94==2) then v95=(function() return v24();end)();elseif (v94~= #"-19") then else v95=(function() return v25();end)();end v58[v91]=(function() return v95;end)();break;end end break;end end end v51=(function() return 2;end)();end if (v51==2) then v56[ #"91("]=(function() return v21();end)();for v96= #"!",v23() do local v97=(function() return v21();end)();if (v20(v97, #"[", #"\\")~=(1665 -(970 + 695))) then else local v108=(function() return 0 -0 ;end)();local v109=(function() return;end)();local v110=(function() return;end)();local v111=(function() return;end)();local v112=(function() return;end)();while true do if (v108~=(1991 -(582 + 1408))) then else local v115=(function() return 0 -0 ;end)();local v116=(function() return;end)();while true do if (v115~=0) then else v116=(function() return 0 -0 ;end)();while true do if (v116==(3 -2)) then v108=(function() return 1826 -(1195 + 629) ;end)();break;end if (v116==0) then v111=(function() return nil;end)();v112=(function() return nil;end)();v116=(function() return 1 -0 ;end)();end end break;end end end if (v108~=(241 -(187 + 54))) then else v109=(function() return 780 -(162 + 618) ;end)();v110=(function() return nil;end)();v108=(function() return 1 + 0 ;end)();end if ((2 + 0)==v108) then while true do if ( #","~=v109) then else local v155=(function() return 0 -0 ;end)();local v156=(function() return;end)();while true do if (0==v155) then v156=(function() return 0;end)();while true do if (v156==1) then v109=(function() return 2 -0 ;end)();break;end if (v156==(0 + 0)) then v112=(function() return {v22(),v22(),nil,nil};end)();if (v110==(1636 -(1373 + 263))) then local v176=(function() return 0;end)();local v177=(function() return;end)();while true do if (v176==(1000 -(451 + 549))) then v177=(function() return 0;end)();while true do if ((0 + 0)==v177) then v112[ #"asd"]=(function() return v22();end)();v112[ #"?id="]=(function() return v22();end)();break;end end break;end end elseif (v110== #"~") then v112[ #"-19"]=(function() return v23();end)();elseif (v110==2) then v112[ #"asd"]=(function() return v23() -((2 -0)^(26 -10)) ;end)();elseif (v110== #"gha") then local v185=(function() return 1384 -(746 + 638) ;end)();local v186=(function() return;end)();while true do if (v185==0) then v186=(function() return 0 + 0 ;end)();while true do if (v186~=0) then else v112[ #"asd"]=(function() return v23() -((2 -0)^(357 -(218 + 123))) ;end)();v112[ #".dev"]=(function() return v22();end)();break;end end break;end end end v156=(function() return 1582 -(1535 + 46) ;end)();end end break;end end end if (v109==2) then local v157=(function() return 0 + 0 ;end)();local v158=(function() return;end)();while true do if (v157~=0) then else v158=(function() return 0;end)();while true do if (v158==0) then if (v20(v111, #">", #"|")== #"~") then v112[2]=(function() return v58[v112[1 + 1 ]];end)();end if (v20(v111,562 -(306 + 254) ,2)~= #"[") then else v112[ #"xxx"]=(function() return v58[v112[ #"91("]];end)();end v158=(function() return 1;end)();end if ((1 + 0)~=v158) then else v109=(function() return  #"19(";end)();break;end end break;end end end if (v109==(0 -0)) then local v159=(function() return 0;end)();local v160=(function() return;end)();while true do if (v159==(1467 -(899 + 568))) then v160=(function() return 0;end)();while true do if ((1 + 0)==v160) then v109=(function() return  #"}";end)();break;end if (v160==(0 -0)) then v110=(function() return v20(v97,605 -(268 + 335) , #"xxx");end)();v111=(function() return v20(v97, #"xnxx",296 -(60 + 230) );end)();v160=(function() return 1;end)();end end break;end end end if (v109~= #"19(") then else if (v20(v111, #"19(", #"-19")~= #",") then else v112[ #"xnxx"]=(function() return v58[v112[ #"0836"]];end)();end v53[v96]=(function() return v112;end)();break;end end break;end end end end for v98= #"]",v23() do v54,v98,v28=(function() return v52(v54,v98,v28);end)();end return v56;end if (0==v51) then v52=(function() return function(v103,v104,v105) local v106=(function() return 0;end)();local v107=(function() return;end)();while true do if (v106==(572 -(426 + 146))) then v107=(function() return 0;end)();while true do if (v107==(0 + 0)) then local v153=(function() return 0;end)();local v154=(function() return;end)();while true do if (v153~=0) then else v154=(function() return 0;end)();while true do if (v154==(1456 -(282 + 1174))) then local v175=(function() return 0;end)();while true do if (v175==(811 -(569 + 242))) then v103[v104-#"{" ]=(function() return v105();end)();return v103,v104,v105;end end end end break;end end end end break;end end end;end)();v53=(function() return {};end)();v54=(function() return {};end)();v55=(function() return {};end)();v51=(function() return 2 -1 ;end)();end end end local function v29(v59,v60,v61) local v62=v59[1 + 0 ];local v63=v59[1026 -(706 + 318) ];local v64=v59[1254 -(721 + 530) ];return function(...) local v67=v62;local v68=v63;local v69=v64;local v70=v27;local v71=1272 -(945 + 326) ;local v72= -(2 -1);local v73={};local v74={...};local v75=v12("#",...) -(701 -(271 + 429)) ;local v76={};local v77={};for v87=0 + 0 ,v75 do if (v87>=v69) then v73[v87-v69 ]=v74[v87 + (1501 -(1408 + 92)) ];else v77[v87]=v74[v87 + (1087 -(461 + 625)) ];end end local v78=(v75-v69) + (1289 -(290 + 703 + 295)) ;local v79;local v80;while true do v79=v67[v71];v80=v79[1];if ((343<=2689) and (v80<=(1 + 6))) then if ((v80<=(1174 -(418 + 753))) or (1869==2009)) then if (v80<=(1 + 0)) then if (v80>0) then local v119=v79[2];local v120=v77[v79[1 + 2 ]];v77[v119 + 1 + 0 ]=v120;v77[v119]=v120[v79[2 + 2 ]];else local v124=(269 + 260) -(147 + 259 + 123) ;local v125;local v126;local v127;local v128;while true do if (v124==(1770 -(1749 + 20))) then v72=(v127 + v125) -1 ;v128=0;v124=2;end if (v124==(1 + 1)) then for v169=v125,v72 do v128=v128 + (2 -1) ;v77[v169]=v126[v128];end break;end if (v124==0) then v125=v79[2];v126,v127=v70(v77[v125](v13(v77,v125 + (1323 -(1249 + 73)) ,v79[2 + 1 ])));v124=1146 -(466 + 679) ;end end end elseif (v80==(4 -(4 -2))) then v77[v79[5 -3 ]]();else v77[v79[(3453 -(1126 + 425)) -(106 + (2199 -(118 + 287))) ]]=v79[1 + 2 ];end elseif (v80<=(2 + 3)) then if ((v80==(11 -7)) or (3546<2322)) then local v131=(0 -0) -0 ;local v132;while true do if (v131==(114 -(4 + 110))) then v132=v79[586 -(57 + 527) ];v77[v132]=v77[v132](v13(v77,v132 + (1122 -(118 + 1003)) ,v72));break;end end else v77[v79[1429 -(41 + 1386) ]]=v61[v79[106 -(17 + 86) ]];end elseif (v80==((14 -9) + 1)) then local v135=0 -0 ;local v136;local v137;local v138;local v139;while true do if (v135==((382 -(142 + 235)) -3)) then for v172=v136,v72 do v139=v139 + ((757 -590) -(122 + 10 + 34)) ;v77[v172]=v137[v139];end break;end if (v135==(1 -0)) then v72=(v138 + v136) -(3 -2) ;v139=0;v135=2 + 0 ;end if (v135==0) then v136=v79[1 + 1 ];v137,v138=v70(v77[v136](v13(v77,v136 + (1 -0) ,v79[(1045 -(553 + 424)) -(30 + 35) ])));v135=1 + 0 ;end end else v77[v79[1259 -(1043 + 214) ]]={};end elseif ((v80<=(41 -30)) or (2082==4773)) then if ((3244>1055) and (v80<=(1221 -(323 + 889)))) then if ((v80>8) or (3313<=1778)) then do return;end else local v141=v79[5 -3 ];local v142=v77[v79[583 -(361 + 219) ]];v77[v141 + (321 -(53 + 267)) ]=v142;v77[v141]=v142[v79[1 + 3 ]];end elseif (v80==10) then v77[v79[415 -((28 -13) + 398) ]]();else v77[v79[984 -(18 + 964) ]]=v61[v79[11 -8 ]];end elseif (v80<=(8 + 5)) then if ((v80==(8 + 4)) or (1421>=2104)) then v77[v79[852 -(20 + 830) ]]={};else local v149=0 + 0 + 0 ;local v150;while true do if ((1812<=3249) and (v149==(126 -(116 + 10)))) then v150=v79[1 + 0 + 1 ];v77[v150]=v77[v150](v13(v77,v150 + 1 ,v72));break;end end end elseif (v80==(752 -(316 + 226 + 196))) then do return;end else v77[v79[3 -1 ]]=v79[3];end v71=v71 + 1 ;end end;end return v29(v28(),{},v17)(...);end return v15("LOL!043Q00030A3Q006C6F6164737472696E6703043Q0067616D6503073Q00482Q747047657403673Q00682Q7470733A2Q2F7261772E67697468756275736572636F6E74656E742E636F6D2F6D696C6B6167616D6573747564696F2D706E672F4D696C6B612D4856482D626C6F78737472696B652F726566732F68656164732F6D61696E2F4D696C6B616876682E6C756100094Q00077Q00120B000100013Q00120B000200023Q002008000200020003001203000400046Q000200044Q000D00013Q00022Q000A0001000100012Q000E3Q00017Q00",v9(),...);
+--// Services & Globals
+local RS = game:GetService("ReplicatedStorage")
+local RunService = game:GetService("RunService")
+local TweenService = game:GetService("TweenService")
+local CAS = game:GetService("ContextActionService")
+local Players = game:GetService("Players")
+local Workspace = game:GetService("Workspace")
+local UserInputService = game:GetService("UserInputService")
+
+local player = Players.LocalPlayer
+local camera = Workspace.CurrentCamera
+local CharactersFolder = Workspace:WaitForChild("Characters", 10)
+
+--// ==========================================
+--// TABS
+--// ==========================================
+local Tab_Combat  = Window:CreateTab("Combat", "crosshair")
+local Tab_Skins   = Window:CreateTab("Skins", "swords")
+local Tab_Visuals = Window:CreateTab("Visuals", "eye")
+
+Tab_Skins:CreateLabel("the randomize all skin change all skin", "code", Color3.fromRGB(80,80,80), false)
+
+--// ==========================================
+--// SHARED LOGIC (TEAM CHECK)
+--// ==========================================
+local function getTFolder() return CharactersFolder:FindFirstChild("Terrorists") end
+local function getCTFolder() return CharactersFolder:FindFirstChild("Counter-Terrorists") end
+
+local function isAlive()
+    local t, ct = getTFolder(), getCTFolder()
+    return (t and t:FindFirstChild(player.Name)) or (ct and ct:FindFirstChild(player.Name))
+end
+
+local function getEnemyFolder()
+    if not isAlive() then return nil end
+    local t, ct = getTFolder(), getCTFolder()
+    if t and t:FindFirstChild(player.Name) then return ct end
+    if ct and ct:FindFirstChild(player.Name) then return t end
+    return nil
+end
+
+--// ==========================================
+--// AIMBOT & FOV LOGIC
+--// ==========================================
+local AimbotEnabled = false
+local ShowFOV = false
+local FOV_Radius = 100
+local Smoothing = 3
+local AimKey = Enum.UserInputType.MouseButton2
+local isAiming = false
+
+local FOVCircle = Drawing.new("Circle")
+FOVCircle.Position = Vector2.new(camera.ViewportSize.X / 2, camera.ViewportSize.Y / 2)
+FOVCircle.Radius = FOV_Radius
+FOVCircle.Filled = false
+FOVCircle.Color = Color3.fromRGB(255, 255, 255)
+FOVCircle.Visible = false
+FOVCircle.Thickness = 1
+
+local function getClosestEnemyToMouse()
+    local closestEnemy = nil
+    local shortestDistance = FOV_Radius
+    local enemyFolder = getEnemyFolder()
+    
+    if not enemyFolder or not AimbotEnabled then return nil end
+    
+    local mousePos = UserInputService:GetMouseLocation()
+    
+    for _, enemy in ipairs(enemyFolder:GetChildren()) do
+        local hum = enemy:FindFirstChildOfClass("Humanoid")
+        local head = enemy:FindFirstChild("Head")
+        
+        if hum and hum.Health > 0 and head then
+            local headPos, onScreen = camera:WorldToViewportPoint(head.Position)
+            if onScreen then
+                local distance = (Vector2.new(headPos.X, headPos.Y) - mousePos).Magnitude
+                if distance < shortestDistance then
+                    shortestDistance = distance
+                    closestEnemy = head
+                end
+            end
+        end
+    end
+    return closestEnemy
+end
+
+UserInputService.InputBegan:Connect(function(input)
+    if input.UserInputType == AimKey then isAiming = true end
+end)
+
+UserInputService.InputEnded:Connect(function(input)
+    if input.UserInputType == AimKey then isAiming = false end
+end)
+
+RunService.RenderStepped:Connect(function()
+    if ShowFOV then
+        FOVCircle.Position = UserInputService:GetMouseLocation()
+        FOVCircle.Radius = FOV_Radius
+        FOVCircle.Visible = true
+    else
+        FOVCircle.Visible = false
+    end
+
+    if not isAiming or not isAlive() or not AimbotEnabled then return end
+    
+    local targetHead = getClosestEnemyToMouse()
+    if targetHead then
+        local headPos = camera:WorldToViewportPoint(targetHead.Position)
+        local mousePos = UserInputService:GetMouseLocation()
+        
+        local moveX = (headPos.X - mousePos.X) / Smoothing
+        local moveY = (headPos.Y - mousePos.Y) / Smoothing
+        
+        if mousemoverel then
+            mousemoverel(moveX, moveY)
+        end
+    end
+end)
+
+Tab_Combat:CreateSection("Aimbot Settings")
+Tab_Combat:CreateToggle({
+    Name = "Enable Aimbot (Hold Right Click)",
+    CurrentValue = false,
+    Flag = "AimbotToggle",
+    Callback = function(Value) AimbotEnabled = Value end
+})
+
+Tab_Combat:CreateToggle({
+    Name = "Show FOV Circle",
+    CurrentValue = false,
+    Flag = "FOVToggle",
+    Callback = function(Value) ShowFOV = Value end
+})
+
+Tab_Combat:CreateSlider({
+    Name = "FOV Radius",
+    Range = {10, 500},
+    Increment = 10,
+    Suffix = "px",
+    CurrentValue = 100,
+    Flag = "FOVSlider",
+    Callback = function(Value) FOV_Radius = Value end
+})
+
+Tab_Combat:CreateSlider({
+    Name = "Aimbot Smoothing",
+    Range = {1, 10},
+    Increment = 1,
+    Suffix = " (Lower is faster)",
+    CurrentValue = 3,
+    Flag = "AimbotSmoothing",
+    Callback = function(Value) Smoothing = Value end
+})
+
+--// ==========================================
+--// TRIGGERBOT LOGIC
+--// ==========================================
+local TriggerBotEnabled = false
+local TriggerBotDelay = 0
+
+Tab_Combat:CreateSection("TriggerBot Settings")
+Tab_Combat:CreateToggle({
+    Name = "Enable TriggerBot",
+    CurrentValue = false,
+    Flag = "TriggerBotToggle",
+    Callback = function(Value) TriggerBotEnabled = Value end
+})
+
+Tab_Combat:CreateSlider({
+    Name = "Shot Delay",
+    Range = {0, 500},
+    Increment = 10,
+    Suffix = "ms",
+    CurrentValue = 0,
+    Flag = "TriggerBotDelay",
+    Callback = function(Value) TriggerBotDelay = Value end
+})
+
+task.spawn(function()
+    while task.wait(0.01) do
+        if TriggerBotEnabled and isAlive() then
+            local viewportSize = camera.ViewportSize
+            local ray = camera:ViewportPointToRay(viewportSize.X / 2, viewportSize.Y / 2)
+            local raycastParams = RaycastParams.new()
+            raycastParams.FilterType = Enum.RaycastFilterType.Exclude
+            
+            local ignoreList = {camera}
+            if player.Character then table.insert(ignoreList, player.Character) end
+            raycastParams.FilterDescendantsInstances = ignoreList
+            
+            local result = Workspace:Raycast(ray.Origin, ray.Direction * 1000, raycastParams)
+            
+            if result and result.Instance then
+                local hitPart = result.Instance
+                local model = hitPart:FindFirstAncestorOfClass("Model")
+                if model and model:FindFirstChildOfClass("Humanoid") then
+                    local enemyFolder = getEnemyFolder()
+                    if enemyFolder and model.Parent == enemyFolder then
+                        local hum = model:FindFirstChildOfClass("Humanoid")
+                        if hum and hum.Health > 0 then
+                            if TriggerBotDelay > 0 then task.wait(TriggerBotDelay / 1000) end
+                            if mouse1click then mouse1click() end
+                            task.wait(0.05)
+                        end
+                    end
+                end
+            end
+        end
+    end
+end)
+
+--// ==========================================
+--// SIMPLE HITBOX LOGIC (NO HOOKS)
+--// ==========================================
+local HitboxEnabled = false
+local HitboxSize = 3
+local originalHeadSizes = {}
+
+Tab_Combat:CreateSection("Simple Hitbox (Max 3)")
+Tab_Combat:CreateToggle({
+    Name = "Enable Hitbox",
+    CurrentValue = false,
+    Flag = "HitboxToggle",
+    Callback = function(Value) 
+        HitboxEnabled = Value 
+    end
+})
+
+Tab_Combat:CreateSlider({
+    Name = "Hitbox Size",
+    Range = {1, 3},
+    Increment = 0.1,
+    Suffix = " Studs",
+    CurrentValue = 3,
+    Flag = "HitboxSize",
+    Callback = function(Value) 
+        HitboxSize = Value 
+    end
+})
+
+task.spawn(function()
+    while task.wait(0.5) do
+        local enemyFolder = getEnemyFolder()
+        if enemyFolder then
+            for _, enemy in ipairs(enemyFolder:GetChildren()) do
+                local head = enemy:FindFirstChild("Head")
+                local hum = enemy:FindFirstChildOfClass("Humanoid")
+                
+                if head and hum and hum.Health > 0 then
+                    -- Cache original size if not saved
+                    if not originalHeadSizes[head] then
+                        originalHeadSizes[head] = head.Size
+                    end
+                    
+                    if HitboxEnabled then
+                        head.Size = Vector3.new(HitboxSize, HitboxSize, HitboxSize)
+                        head.CanCollide = false
+                        head.Transparency = 0.5
+                    else
+                        -- Revert to normal if disabled
+                        if originalHeadSizes[head] and head.Size ~= originalHeadSizes[head] then
+                            head.Size = originalHeadSizes[head]
+                            head.Transparency = 0
+                        end
+                    end
+                end
+            end
+        end
+    end
+end)
+
+--// ==========================================
+--// BHOP (BUNNY HOP) LOGIC
+--// ==========================================
+local BhopEnabled = false
+
+Tab_Combat:CreateSection("Movement Settings")
+Tab_Combat:CreateToggle({
+    Name = "Enable Bunny Hop (Hold Space)",
+    CurrentValue = false,
+    Flag = "BhopToggle",
+    Callback = function(Value) 
+        BhopEnabled = Value 
+    end
+})
+
+RunService.RenderStepped:Connect(function()
+    if BhopEnabled and UserInputService:IsKeyDown(Enum.KeyCode.Space) and isAlive() then
+        if player.Character then
+            local hum = player.Character:FindFirstChildOfClass("Humanoid")
+            if hum and hum:GetState() ~= Enum.HumanoidStateType.Jumping and hum:GetState() ~= Enum.HumanoidStateType.Freefall then
+                hum.Jump = true
+            end
+        end
+    end
+end)
+
+--// ==========================================
+--// SKINS TAB LOGIC
+--// ==========================================
+local scriptRunning = false
+local selectedKnife = "Butterfly Knife"
+local spawned = false
+local inspecting = false
+local swinging = false
+local lastAttackTime = 0
+
+local ATTACK_COOLDOWN = 1
+local ACTION_INSPECT = "InspectKnifeAction"
+local ACTION_ATTACK  = "AttackKnifeAction"
+
+pcall(function() RS.Assets.Weapons.Karambit.Camera.ViewmodelLight.Transparency = 1 end)
+
+local knives = {
+    ["Karambit"]       = {Offset = CFrame.new(0, -1.5, 1.5)},
+    ["Butterfly Knife"] = {Offset = CFrame.new(0, -1.5, 1.5)},
+    ["M9 Bayonet"]     = {Offset = CFrame.new(0, -1.5, 1)},
+    ["Flip Knife"]     = {Offset = CFrame.new(0, -1.5, 1.25)},
+    ["Gut Knife"]      = {Offset = CFrame.new(0, -1.5, 0.5)},
+}
+
+local vm, animator
+local equipAnim, idleAnim, inspectAnim, HeavySwingAnim, Swing1Anim, Swing2Anim
+
+local function getKnifeInCamera() return camera:FindFirstChild("T Knife") or camera:FindFirstChild("CT Knife") end
+
+local function cleanPart(part)
+    if not part:IsA("BasePart") then return end
+    part.CanCollide, part.Anchored, part.CastShadow, part.CanTouch, part.CanQuery = false, false, false, false, false
+end
+
+local function disableCollisions(model)
+    for _, part in model:GetDescendants() do cleanPart(part) end
+end
+
+local function hideOriginalKnife(knife)
+    for _, part in knife:GetDescendants() do
+        if part:IsA("BasePart") or part:IsA("MeshPart") or part:IsA("Texture") then part.Transparency = 1 end
+    end
+end
+
+local function playSound(folder, name)
+    local weaponSounds = RS.Sounds:FindFirstChild(selectedKnife)
+    if not weaponSounds then return end
+    local sound = weaponSounds:WaitForChild(folder):WaitForChild(name):Clone()
+    sound.Parent = camera
+    sound:Play()
+    sound.Ended:Once(function() sound:Destroy() end)
+    return sound
+end
+
+local function attachAsset(folder, armPartName, assetModelName, finalName, offset)
+    local targetArm = vm:FindFirstChild(armPartName)
+    if not targetArm then return end
+    local assetMesh = folder:WaitForChild(assetModelName):Clone()
+    cleanPart(assetMesh)
+    assetMesh.Name = finalName
+    assetMesh.Parent = targetArm
+    local motor = Instance.new("Motor6D")
+    motor.Part0, motor.Part1, motor.C0, motor.Parent = targetArm, assetMesh, offset, targetArm
+end
+
+local function handleAction(actionName, inputState, inputObject)
+    if inputState ~= Enum.UserInputState.Begin or not spawned or not animator or not isAlive() then return Enum.ContextActionResult.Pass end
+
+    if actionName == ACTION_INSPECT then
+        if (equipAnim and equipAnim.IsPlaying) or inspecting or swinging then return Enum.ContextActionResult.Pass end
+        inspecting = true
+        if idleAnim then idleAnim:Stop() end
+        inspectAnim:Play()
+        inspectAnim.Stopped:Once(function() inspecting = false end)
+    elseif actionName == ACTION_ATTACK then
+        local currentTime = os.clock()
+        if (equipAnim and equipAnim.IsPlaying) or (currentTime - lastAttackTime < ATTACK_COOLDOWN) then return Enum.ContextActionResult.Pass end
+        lastAttackTime = currentTime
+        if inspecting then inspecting = false; if inspectAnim then inspectAnim:Stop() end end
+        swinging = true
+        if idleAnim then idleAnim:Stop() end
+        local anims = {HeavySwingAnim, Swing1Anim, Swing2Anim}
+        local chosenAnim = anims[math.random(1, #anims)]
+        local soundFolder = (chosenAnim == HeavySwingAnim and "HitOne") or (chosenAnim == Swing1Anim and "HitTwo") or "HitThree"
+        chosenAnim:Play()
+        local s = playSound(soundFolder, "1")
+        if s then s.Volume = 5 end
+        chosenAnim.Stopped:Once(function() swinging = false end)
+    end
+    return Enum.ContextActionResult.Pass
+end
+
+local function removeViewmodel()
+    spawned = false
+    CAS:UnbindAction(ACTION_INSPECT)
+    CAS:UnbindAction(ACTION_ATTACK)
+    if vm then vm:Destroy() vm = nil end
+    animator, inspecting, swinging = nil, false, false
+end
+
+local function spawnViewmodel(knife)
+    if spawned or not scriptRunning then return end
+    local myModel = isAlive()
+    if not myModel then return end
+    spawned = true
+
+    local knifeTemplate = RS.Assets.Weapons:WaitForChild(selectedKnife)
+    local knifeOffset = knives[selectedKnife].Offset
+    vm = knifeTemplate:WaitForChild("Camera"):Clone()
+    vm.Name, vm.Parent = selectedKnife, camera
+
+    disableCollisions(vm)
+    hideOriginalKnife(knife)
+
+    if myModel.Parent.Name == "Terrorists" then
+        local tGloves = RS.Assets.Weapons:WaitForChild("T Glove")
+        attachAsset(tGloves, "Left Arm", "Left Arm", "Glove", CFrame.new(0, 0, -1.5))
+        attachAsset(tGloves, "Right Arm", "Right Arm", "Glove", CFrame.new(0, 0, -1.5))
+    else
+        local sleeves = RS.Assets.Sleeves:WaitForChild("IDF")
+        local ctGloves = RS.Assets.Weapons:WaitForChild("CT Glove")
+        attachAsset(sleeves, "Left Arm", "Left Arm", "Sleeve", CFrame.new(0, 0, 0.5))
+        attachAsset(ctGloves, "Left Arm", "Left Arm", "Glove", CFrame.new(0, 0, -1.5))
+        attachAsset(sleeves, "Right Arm", "Right Arm", "Sleeve", CFrame.new(0, 0, 0.5))
+        attachAsset(ctGloves, "Right Arm", "Right Arm", "Glove", CFrame.new(0, 0, -1.5))
+    end
+
+    local animController = vm:FindFirstChildOfClass("AnimationController") or vm:FindFirstChildOfClass("Animator")
+    animator = animController:FindFirstChildWhichIsA("Animator") or animController
+    local animFolder = RS.Assets.WeaponAnimations:WaitForChild(selectedKnife):WaitForChild("CameraAnimations")
+
+    equipAnim = animator:LoadAnimation(animFolder:WaitForChild("Equip"))
+    idleAnim = animator:LoadAnimation(animFolder:WaitForChild("Idle"))
+    inspectAnim = animator:LoadAnimation(animFolder:WaitForChild("Inspect"))
+    HeavySwingAnim = animator:LoadAnimation(animFolder:WaitForChild("Heavy Swing"))
+    Swing1Anim = animator:LoadAnimation(animFolder:WaitForChild("Swing1"))
+    Swing2Anim = animator:LoadAnimation(animFolder:WaitForChild("Swing2"))
+
+    vm:SetPrimaryPartCFrame(camera.CFrame * CFrame.new(0, -1.5, 5))
+    TweenService:Create(vm.PrimaryPart, TweenInfo.new(0.2, Enum.EasingStyle.Quad, Enum.EasingDirection.Out), {
+        CFrame = camera.CFrame * knifeOffset
+    }):Play()
+
+    equipAnim:Play()
+    playSound("Equip", "1")
+
+    CAS:BindAction(ACTION_INSPECT, handleAction, false, Enum.KeyCode.F)
+    CAS:BindAction(ACTION_ATTACK, handleAction, false, Enum.UserInputType.MouseButton1)
+end
+
+RunService.RenderStepped:Connect(function()
+    if not scriptRunning or not vm or not vm.PrimaryPart then return end
+    vm.PrimaryPart.CFrame = camera.CFrame * knives[selectedKnife].Offset
+    if not (equipAnim and equipAnim.IsPlaying) and not inspecting and not swinging then
+        if idleAnim and not idleAnim.IsPlaying then idleAnim:Play() end
+    end
+end)
+
+task.spawn(function()
+    while task.wait(0.1) do
+        local living = isAlive()
+        local currentKnife = getKnifeInCamera()
+        if scriptRunning and living and currentKnife and not spawned then
+            spawnViewmodel(currentKnife)
+        elseif (not scriptRunning or not currentKnife or not living) and spawned then
+            removeViewmodel()
+        end
+    end
+end)
+
+local SkinChangerEnabled = false
+local SelectedSkins = {}
+local DropdownObjects = {}
+local SkinOptions = {}
+local COOLDOWN = 0.1
+local WEAR = "Factory New"
+
+local CT_ONLY = {["USP-S"]=true, ["Five-SeveN"]=true, ["MP9"]=true, ["FAMAS"]=true, ["M4A1-S"]=true, ["M4A4"]=true, ["AUG"]=true}
+local SHARED = {["P250"]=true, ["Desert Eagle"]=true, ["Dual Berettas"]=true, ["Negev"]=true, ["P90"]=true, ["Nova"]=true, ["XM1014"]=true, ["AWP"]=true, ["SSG 08"]=true}
+local KNIVES = {["Karambit"]=true, ["Butterfly Knife"]=true, ["M9 Bayonet"]=true, ["Flip Knife"]=true, ["Gut Knife"]=true, ["T Knife"]=true, ["CT Knife"]=true}
+local GLOVES = {["Sports Gloves"]=true}
+local SkinsFolder = RS:WaitForChild("Assets"):WaitForChild("Skins")
+local IgnoreFolders = {["HE Grenade"]=true, ["Incendiary Grenade"]=true, ["Molotov"]=true, ["Smoke Grenade"]=true, ["Flashbang"]=true, ["Decoy Grenade"]=true, ["C4"]=true, ["CT Glove"]=true, ["T Glove"]=true}
+
+-- Fonction pour filtrer les skins (exclure "Stock")
+local function getNonStockSkins(folder)
+    local skins = {}
+    for _, skin in folder:GetChildren() do
+        if skin.Name ~= "Stock" then
+            table.insert(skins, skin.Name)
+        end
+    end
+    return skins
+end
+
+local function applyWeaponSkin(model)
+    if not model or not SkinChangerEnabled or not isAlive() then return end
+    local skinName = SelectedSkins[model.Name]
+    if not skinName then return end
+
+    pcall(function()
+        local skinFolder = SkinsFolder:FindFirstChild(model.Name)
+        if not skinFolder then return end
+        local skinType = skinFolder:FindFirstChild(skinName)
+        local sourceFolder = skinType and skinType:FindFirstChild("Camera") and skinType.Camera:FindFirstChild(WEAR)
+        if not sourceFolder then return end
+
+        for _, obj in camera:GetChildren() do
+            local left, right = obj:FindFirstChild("Left Arm"), obj:FindFirstChild("Right Arm")
+            if left or right then
+                local gloveFolder = SkinsFolder:FindFirstChild("Sports Gloves")
+                local gloveSkin = gloveFolder and gloveFolder:FindFirstChild(SelectedSkins["Sports Gloves"])
+                local gloveSource = gloveSkin and gloveSkin:FindFirstChild("Camera") and gloveSkin.Camera:FindFirstChild(WEAR)
+                if gloveSource then
+                    for _, side in {"Left Arm", "Right Arm"} do
+                        local arm, src = obj:FindFirstChild(side), gloveSource:FindFirstChild(side)
+                        if arm and src then
+                            local gloveMesh = arm:FindFirstChild("Glove")
+                            if gloveMesh then
+                                local existing = gloveMesh:FindFirstChildOfClass("SurfaceAppearance")
+                                if existing then existing:Destroy() end
+                                local clone = src:Clone()
+                                clone.Name, clone.Parent = "SurfaceAppearance", gloveMesh
+                            end
+                        end
+                    end
+                end
+            end
+        end
+
+        if not GLOVES[model.Name] then
+            local weaponFolder = model:FindFirstChild("Weapon")
+            if weaponFolder then
+                for _, part in weaponFolder:GetDescendants() do
+                    if part:IsA("BasePart") then
+                        local newSkin = sourceFolder:FindFirstChild(part.Name)
+                        if newSkin then
+                            local existing = part:FindFirstChildOfClass("SurfaceAppearance")
+                            if existing then existing:Destroy() end
+                            local clone = newSkin:Clone()
+                            clone.Name, clone.Parent = "SurfaceAppearance", part
+                        end
+                    end
+                end
+            end
+        end
+        model:SetAttribute("SkinApplied", skinName)
+    end)
+end
+
+Tab_Skins:CreateToggle({
+    Name = "Enable Skin Changer",
+    CurrentValue = false,
+    Flag = "SkinChangerToggle",
+    Callback = function(Value)
+        SkinChangerEnabled = Value
+        if not Value then for _, obj in camera:GetChildren() do obj:SetAttribute("SkinApplied", nil) end end
+    end
+})
+
+Tab_Skins:CreateButton({
+    Name = "Randomize All Skins",
+    Callback = function()
+        for weaponName, optionsList in pairs(SkinOptions) do
+            if #optionsList > 0 then
+                local randomSkin = optionsList[math.random(1, #optionsList)]
+                if DropdownObjects[weaponName] then
+                    for _, dropdown in ipairs(DropdownObjects[weaponName]) do dropdown:Set({randomSkin}) end
+                end
+            end
+        end
+    end,
+})
+
+local function CreateSkinDropdown(weaponName)
+    local folder = SkinsFolder:FindFirstChild(weaponName)
+    if not folder then return end
+    
+    -- Utiliser la fonction pour exclure "Stock"
+    local options = getNonStockSkins(folder)
+    SkinOptions[weaponName] = options
+    
+    if #options > 0 then
+        if not SelectedSkins[weaponName] then SelectedSkins[weaponName] = options[1] end
+    else
+        SelectedSkins[weaponName] = nil
+    end
+
+    local dp = Tab_Skins:CreateDropdown({
+        Name = weaponName,
+        Options = options,
+        CurrentOption = {SelectedSkins[weaponName]},
+        Flag = "Skin_" .. weaponName,
+        Callback = function(opt)
+            local newSkin = opt[1]
+            SelectedSkins[weaponName] = newSkin
+            if DropdownObjects[weaponName] then
+                for _, other in DropdownObjects[weaponName] do
+                    if other.CurrentOption[1] ~= newSkin then other:Set({newSkin}) end
+                end
+            end
+            for _, obj in camera:GetChildren() do obj:SetAttribute("SkinApplied", nil); applyWeaponSkin(obj) end
+        end
+    })
+    DropdownObjects[weaponName] = DropdownObjects[weaponName] or {}
+    table.insert(DropdownObjects[weaponName], dp)
+end
+
+Tab_Skins:CreateToggle({
+    Name = "Enable Custom Knife",
+    CurrentValue = false,
+    Flag = "KnifeToggle",
+    Callback = function(Value)
+        scriptRunning = Value; if not Value then removeViewmodel() end
+    end
+})
+
+Tab_Skins:CreateDropdown({
+    Name = "Selected Custom Knife",
+    Options = {"Butterfly Knife", "Karambit", "M9 Bayonet", "Flip Knife", "Gut Knife"},
+    CurrentOption = {"Butterfly Knife"},
+    MultipleOptions = false,
+    Flag = "KnifeDropdown",
+    Callback = function(Options)
+        selectedKnife = Options[1]; if spawned then removeViewmodel() end
+    end
+})
+
+Tab_Skins:CreateSection("Knives Skins")
+for name in pairs(KNIVES) do CreateSkinDropdown(name) end
+Tab_Skins:CreateSection("Gloves")
+for name in pairs(GLOVES) do CreateSkinDropdown(name) end
+Tab_Skins:CreateSection("CT Weapons")
+for name in pairs(CT_ONLY) do CreateSkinDropdown(name) end
+Tab_Skins:CreateSection("T Weapons")
+for name in pairs(SHARED) do CreateSkinDropdown(name) end
+
+for _, folder in SkinsFolder:GetChildren() do
+    local n = folder.Name
+    if not IgnoreFolders[n] and not KNIVES[n] and not GLOVES[n] and not CT_ONLY[n] and not SHARED[n] then CreateSkinDropdown(n) end
+end
+
+camera.ChildAdded:Connect(function(obj)
+    if not SkinChangerEnabled or not isAlive() then return end
+    task.wait(COOLDOWN); applyWeaponSkin(obj)
+end)
+
+task.spawn(function()
+    while task.wait(0.5) do
+        if SkinChangerEnabled and isAlive() then
+            for _, obj in camera:GetChildren() do
+                if SelectedSkins[obj.Name] and obj:GetAttribute("SkinApplied") ~= SelectedSkins[obj.Name] then applyWeaponSkin(obj) end
+            end
+        end
+    end
+end)
+
+--// ==========================================
+--// VISUALS TAB LOGIC (ESP & WORLD)
+--// ==========================================
+local EspEnabled, EspBox, EspName, EspHealth, EspDistance = false, true, true, true, true
+local espCache = {}
+
+local function createESP()
+    local esp = {
+        boxOutline = Drawing.new("Square"), box = Drawing.new("Square"),
+        name = Drawing.new("Text"), distance = Drawing.new("Text"),
+        healthOutline = Drawing.new("Line"), healthBar = Drawing.new("Line")
+    }
+    esp.boxOutline.Thickness = 3; esp.boxOutline.Filled = false; esp.boxOutline.Color = Color3.new(0, 0, 0)
+    esp.box.Thickness = 1; esp.box.Filled = false; esp.box.Color = Color3.fromRGB(255, 50, 50)
+    esp.name.Center = true; esp.name.Outline = true; esp.name.Color = Color3.new(1, 1, 1); esp.name.Size = 16
+    esp.distance.Center = true; esp.distance.Outline = true; esp.distance.Color = Color3.new(0.8, 0.8, 0.8); esp.distance.Size = 13
+    esp.healthOutline.Thickness = 3; esp.healthOutline.Color = Color3.new(0, 0, 0)
+    esp.healthBar.Thickness = 1; esp.healthBar.Color = Color3.new(0, 1, 0)
+    return esp
+end
+
+RunService.RenderStepped:Connect(function()
+    if not EspEnabled or not isAlive() then
+        for _, e in pairs(espCache) do for _, d in pairs(e) do d.Visible = false end end
+        return
+    end
+    
+    local enemyFolder = getEnemyFolder()
+    if not enemyFolder then return end
+
+    local currentAlive = {}
+    for _, enemy in ipairs(enemyFolder:GetChildren()) do
+        local hum, root, head = enemy:FindFirstChildOfClass("Humanoid"), enemy:FindFirstChild("HumanoidRootPart"), enemy:FindFirstChild("Head")
+
+        if hum and hum.Health > 0 and root and head then
+            currentAlive[enemy] = true
+            if not espCache[enemy] then espCache[enemy] = createESP() end
+            
+            local esp = espCache[enemy]
+            local rootPos, onScreen = camera:WorldToViewportPoint(root.Position)
+            local headPos = camera:WorldToViewportPoint(head.Position + Vector3.new(0, 0.5, 0))
+            local legPos = camera:WorldToViewportPoint(root.Position - Vector3.new(0, 3, 0))
+
+            if onScreen then
+                local boxH, boxW = math.abs(headPos.Y - legPos.Y), math.abs(headPos.Y - legPos.Y) / 2
+                local dist = math.floor((camera.CFrame.Position - root.Position).Magnitude)
+
+                if EspBox then
+                    esp.boxOutline.Size = Vector2.new(boxW, boxH); esp.boxOutline.Position = Vector2.new(rootPos.X - boxW / 2, headPos.Y); esp.boxOutline.Visible = true
+                    esp.box.Size = Vector2.new(boxW, boxH); esp.box.Position = Vector2.new(rootPos.X - boxW / 2, headPos.Y); esp.box.Visible = true
+                else esp.boxOutline.Visible, esp.box.Visible = false, false end
+                
+                if EspHealth then
+                    local hpPct, barX = hum.Health / hum.MaxHealth, rootPos.X - boxW / 2 - 6
+                    esp.healthOutline.From = Vector2.new(barX, headPos.Y - 1); esp.healthOutline.To = Vector2.new(barX, headPos.Y + boxH + 1); esp.healthOutline.Visible = true
+                    esp.healthBar.From = Vector2.new(barX, headPos.Y + boxH); esp.healthBar.To = Vector2.new(barX, headPos.Y + boxH - (boxH * hpPct)); esp.healthBar.Color = Color3.new(1 - hpPct, hpPct, 0); esp.healthBar.Visible = true
+                else esp.healthOutline.Visible, esp.healthBar.Visible = false, false end
+                
+                if EspName then esp.name.Text = enemy.Name; esp.name.Position = Vector2.new(rootPos.X, headPos.Y - 20); esp.name.Visible = true 
+                else esp.name.Visible = false end
+
+                if EspDistance then esp.distance.Text = "[" .. dist .. "m]"; esp.distance.Position = Vector2.new(rootPos.X, headPos.Y + boxH + 2); esp.distance.Visible = true
+                else esp.distance.Visible = false end
+            else for _, d in pairs(esp) do d.Visible = false end end
+        end
+    end
+    for cEnemy, e in pairs(espCache) do
+        if not currentAlive[cEnemy] then for _, d in pairs(e) do d:Remove() end; espCache[cEnemy] = nil end
+    end
+end)
+
+Tab_Visuals:CreateSection("ESP Master Switch")
+Tab_Visuals:CreateToggle({Name = "Enable Player ESP", CurrentValue = false, Flag = "ESPToggle", Callback = function(Value) EspEnabled = Value end})
+
+Tab_Visuals:CreateSection("ESP Settings")
+Tab_Visuals:CreateToggle({Name = "Show Box", CurrentValue = true, Flag = "EspBoxToggle", Callback = function(Value) EspBox = Value end})
+Tab_Visuals:CreateToggle({Name = "Show Health", CurrentValue = true, Flag = "EspHealthToggle", Callback = function(Value) EspHealth = Value end})
+Tab_Visuals:CreateToggle({Name = "Show Name", CurrentValue = true, Flag = "EspNameToggle", Callback = function(Value) EspName = Value end})
+Tab_Visuals:CreateToggle({Name = "Show Distance", CurrentValue = true, Flag = "EspDistanceToggle", Callback = function(Value) EspDistance = Value end})
+
+local AntiFlashEnabled, AntiSmokeEnabled = false, false
+Tab_Visuals:CreateSection("World and Effects")
+Tab_Visuals:CreateToggle({Name = "Anti-Flashbang", CurrentValue = false, Flag = "AntiFlashToggle", Callback = function(Value) AntiFlashEnabled = Value end})
+Tab_Visuals:CreateToggle({Name = "Anti-Smoke", CurrentValue = false, Flag = "AntiSmokeToggle", Callback = function(Value) AntiSmokeEnabled = Value end})
+
+task.spawn(function()
+    while task.wait(0.2) do
+        if AntiFlashEnabled then
+            local gui, effect = player.PlayerGui:FindFirstChild("FlashbangEffect"), game:GetService("Lighting"):FindFirstChild("FlashbangColorCorrection")
+            if gui then gui:Destroy() end; if effect then effect:Destroy() end
+        end
+    end
+end)
+
+task.spawn(function()
+    while task.wait(0.5) do
+        if AntiSmokeEnabled then
+            local debris = Workspace:FindFirstChild("Debris")
+            if debris then
+                for _, folder in ipairs(debris:GetChildren()) do
+                    if string.match(folder.Name, "Voxel") then folder:ClearAllChildren(); folder:Destroy() end
+                end
+            end
+        end
+    end
+end)
+
+Rayfield:LoadConfiguration()
