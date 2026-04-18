@@ -38,7 +38,7 @@ local Tab_Combat  = Window:CreateTab("Combat", "crosshair")
 local Tab_Skins   = Window:CreateTab("Skins", "swords")
 local Tab_Visuals = Window:CreateTab("Visuals", "eye")
 
-Tab_Skins:CreateLabel("this skin changer script by twistedk1d (not made me)", "code", Color3.fromRGB(80,80,80), false)
+Tab_Skins:CreateLabel("the randomize all skin change all skin", "code", Color3.fromRGB(80,80,80), false)
 
 --// ==========================================
 --// SHARED LOGIC (TEAM CHECK)
